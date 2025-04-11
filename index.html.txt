@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPTEST - Web Security Testing Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>APPTEST</h1>
+        <p>A Burp-Inspired Tool for Ethical Bug Bounty Hunting</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#ethics">Ethics</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About APPTEST</h2>
+            <p>APPTEST is a lightweight, open-source tool designed for ethical security researchers to identify web vulnerabilities in bug bounty programs. Inspired by Burp Suite, it offers proxying, crawling, scanning, and more.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Intercepting Proxy</strong>: Capture and modify HTTP/HTTPS traffic.</li>
+                <li><strong>Crawler</strong>: Map websites to find URLs and forms.</li>
+                <li><strong>Scanner</strong>: Detect XSS, SQLi, open redirects, and header issues.</li>
+                <li><strong>Intruder</strong>: Fuzz parameters for vulnerabilities.</li>
+                <li><strong>Repeater</strong>: Resend requests with modifications.</li>
+                <li><strong>Reports</strong>: Generate bug bounty-ready Markdown reports.</li>
+            </ul>
+        </section>
+        <section id="usage">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Install Python 3 and dependencies: <code>pip install mitmproxy requests beautifulsoup4 urllib3</code></li>
+                <li>Download <a href="apptest.py" download>apptest.py</a>.</li>
+                <li>Run: <code>python apptest.py example.com</code></li>
+                <li>Configure your browser to use the proxy at <code>localhost:8080</code>.</li>
+                <li>Check <code>apptest_report.md</code> for findings.</li>
+                <li>Optional: Use <code>--intruder param</code> or <code>--repeater</code> for advanced testing.</li>
+            </ol>
+        </section>
+        <section id="download">
+            <h2>Download</h2>
+            <p>Get APPTEST now and start hunting bugs ethically!</p>
+            <a href="apptest.py" download class="download-btn">Download apptest.py</a>
+        </section>
+        <section id="ethics">
+            <h2>Ethical Use</h2>
+            <p>APPTEST is for <strong>authorized use only</strong>. Only test websites with explicit permission, such as those in bug bounty programs (e.g., HackerOne, Bugcrowd). Unauthorized scanning is illegal and unethical.</p>
+            <p>Always respect program scopes and verify findings manually before reporting.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 APPTEST. Built for ethical security research.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
